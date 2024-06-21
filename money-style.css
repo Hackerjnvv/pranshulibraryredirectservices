@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    border: 2px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 1200px;
+}
+
+.student-name {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.student-name label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.student-name input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+form {
+    display: inline-block;
+    margin: 5px 0;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px 0;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .student-name {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .student-name label {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+
+    form {
+        display: inline;
+    }
+
+    button {
+        display: inline-block;
+        width: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    table, th, td {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+}
