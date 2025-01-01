@@ -105,7 +105,42 @@
             border-radius: 25px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            animation: clickIt 1.2s linear 0s infinite normal none;
+            margin-left: 30px;
+            margin-right: 30px;
         }
+
+      
+        @keyframes clickIt {
+          0% {      
+	transform: scale3d(1, 1, 1);
+          }
+      
+          30% {     
+	transform: scale3d(1.25, 0.75, 1);
+          }
+      
+          40% {
+        	transform: scale3d(0.75, 1.25, 1);
+          }
+      
+          50% {
+	transform: scale3d(1.15, 0.85, 1);
+          }
+      
+          65% {
+	transform: scale3d(0.95, 1.05, 1);
+          }
+      
+          75% {
+	transform: scale3d(1.05, 0.95, 1);
+          }
+      
+          100% {
+	transform: scale3d(1, 1, 1);
+          }
+        }
+        
 
         .button:hover {
             background-color: #003257;
@@ -156,7 +191,54 @@
 
             table {
                 width: 100%;
+                animation: clic 20s linear 0s infinite normal none;
             }
+
+@keyframes clic {
+  0% {
+	transform: translate(0);
+  }
+
+  10% {
+	transform: translate(-2px, -2px);
+  }
+
+  20% {
+	transform: translate(2px, -2px);
+  }
+
+  30% {
+	transform: translate(-2px, 2px);
+  }
+
+  40% {
+	transform: translate(2px, 2px);
+  }
+
+  50% {
+	transform: translate(-2px, -2px);
+  }
+
+  60% {
+	transform: translate(2px, -2px);
+  }
+
+  70% {
+	transform: translate(-2px, 2px);
+  }
+
+  80% {
+	transform: translate(-2px, -2px);
+  }
+
+  90% {
+	transform: translate(2px, -2px);
+  }
+
+  100% {
+	transform: translate(0);
+  }
+}
 
             th, td {
                 font-size: 0.9em;
@@ -185,7 +267,7 @@
         </ul>
 
         <div>
-            <button onclick="redirectToReg()" class="button">Registration</button>
+            👉<button onclick="redirectToReg()" class="button">Registration</button>👈
         </div>
 
         <script>
@@ -204,19 +286,43 @@
             <tbody>
                 <tr>
                     <td>06 AM - 09 PM</td>
-                    <td>₹699</td>
+                    <td>FREE FOR 1 DAY</td>
                 </tr>
                 <tr>
                     <td>09 AM - 01 PM</td>
-                    <td>₹399</td>
+                    <td>FREE FOR 1 DAY</td>
                 </tr>
                 <tr>
                     <td>10 AM - 06 PM</td>
-                    <td>₹599</td>
+                    <td>FREE FOR 1 DAY</td>
                 </tr>
                 <tr>
                     <td>02 PM - 06 PM</td>
-                    <td>₹399</td>
+                    <td>FREE FOR 1 DAY</td>
+                </tr>
+                <tr>
+                    <td>02 PM - 06 PM</td>
+                    <td>FREE FOR 1 DAY</td>
+                </tr>
+                <tr>
+                    <td>02 PM - 06 PM</td>
+                    <td>FREE FOR 1 DAY</td>
+                </tr>
+                <tr>
+                    <td>02 PM - 06 PM</td>
+                    <td>FREE FOR 1 DAY</td>
+                </tr>
+                <tr>
+                    <td>02 PM - 06 PM</td>
+                    <td>FREE FOR 1 DAY</td>
+                </tr>
+                <tr>
+                    <td>02 PM - 06 PM</td>
+                    <td>FREE FOR 1 DAY</td>
+                </tr>
+                <tr>
+                    <td>02 PM - 06 PM</td>
+                    <td>FREE FOR 1 DAY</td>
                 </tr>
             </tbody>
         </table>
@@ -224,7 +330,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Pranshu Library. All rights reserved.</p>
+        <p>&copy; 2025 Pranshu Library. All rights reserved.</p>
     </footer>
 </body>
 </html>
